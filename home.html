@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <title>KOLARU</title>
+        <link rel="stylesheet" href="home.css">
+        <style>
+            body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+            body {
+                background: rgb(54, 138, 66);
+                overflow: hidden;
+            }
+            body {
+    background: linear-gradient(-45deg, #ff6b6b, #276b82, #a51187, #1e90ff);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 10s infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+          
+        
+            .star {
+                position: absolute;
+                width: 2px;
+                height: 2px;
+                background: rgb(125, 30, 78);
+                animation: twinkle 2s infinite alternate;
+            }
+        
+            @keyframes twinkle {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>&#10084;WELCOME TO KOLARU FAMILY&#10084;</h1>
+           
+        </header>
+        <div class="image"><img src="WhatsApp Image 2025-03-10 at 15.25.42_1d808e2c.jpg" style="width: 100%; max-width: 300px; height: auto;"></div>
+        <main>
+          
+            <ul class="names">
+                <li><a href="meyya.html">Meyya</a></li>
+                <li><a href="kabilan.html">Kabilan</a></li>
+                <li><a href="akshay.html">Akshay</a></li>
+                <li><a href="manoj.html">Manoj</a></li>
+                <li><a href="riyas.html">Riyaz</a></li>
+                <li><a href="gowtham.html">Gowtham</a></li>
+            </ul>
+        </main>
+        <footer>
+            <p>&copy; 2025 Our Group</p>
+        </footer>
+        <script>
+            function createStars() {
+                for (let i = 0; i < 100; i++) {
+                    let star = document.createElement("div");
+                    star.classList.add("star");
+                    star.style.left = Math.random() * window.innerWidth + "px";
+                    star.style.top = Math.random() * window.innerHeight + "px";
+                    document.body.appendChild(star);
+                }
+            }
+    
+            createStars();
+        </script>
+    </body>
+    </html>
