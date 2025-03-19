@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loosu Punda</title>
+    <style>
+        /* Full-Screen Background with new colors */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background: radial-gradient(circle, #8EC5FC, #E0C3FC);
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+        body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+        /* Centered Image in Box Style */
+        .image-container {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container img {
+            width: 150px; /* Reduced size */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Animated Running Text Positioned Below Image */
+        .text-container {
+            position: absolute;
+            top: 65%; /* Adjusted to keep text away from image */
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .running-text {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            animation: runningText 5s linear infinite;
+        }
+
+        @keyframes runningText {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        /* Home Button with 3D hover effect */
+        .home-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: #ff758c;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(255, 107, 129, 0.5);
+            perspective: 1000px;
+        }
+
+        .home-button:hover {
+        
+            background: #a61661;
+            box-shadow: 0px 8px 20px rgba(255, 71, 87, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Centered Image in Box -->
+    <div class="image-container">
+        <img src="manoj_funny.jpg" alt="Meyya image">
+    </div>
+
+    <!-- Running Text Positioned Below Image -->
+    <div class="text-container">
+        <div class="running-text">tharkuri thevdiya &#129313; tharkuri thevdiya &#129313; tharkuri thevdiya &#129313; tharkuri thevdiya &#129313;tharkuri thevdiya &#129313;</div>
+    </div>
+
+    <!-- Home Button -->
+    <a href="home.html" class="home-button">🏠 Home</a>
+
+</body>
+</html>
